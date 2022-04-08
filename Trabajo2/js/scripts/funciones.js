@@ -13,3 +13,9 @@ function chau(){
 function alerta(){
     alert(`Pasaste por aca`)
 }
+//Funcion 4//
+function cambiar(){ 
+    document.getElementById("a1").style.color="red"
+    document.getElementById("a1").style.background="black"
+    
+}
