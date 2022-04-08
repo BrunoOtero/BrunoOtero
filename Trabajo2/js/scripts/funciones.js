@@ -17,5 +17,9 @@ function alerta(){
 function cambiar(){ 
     document.getElementById("a1").style.color="red"
     document.getElementById("a1").style.background="black"
-    
+}
+//Funcion 5//
+function volver(){ 
+    document.getElementById("a1").style.color="black"
+    document.getElementById("a1").style.background="blue"
 }
