@@ -9,3 +9,7 @@ function hola(){
 function chau(){
     console.log(`Chau`)
 }
+//Funcion 3//
+function alerta(){
+    alert(`Pasaste por aca`)
+}
