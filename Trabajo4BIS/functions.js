@@ -9,10 +9,17 @@ mArray[1] = "Pera";
 let i=0;
 
 //for (i=0; j <mArray.length; i++){console.log(mArray[i]);}//
+
 mArray.push("Sandia");
 mArray.unshift("Naranja");
 
 mArray.forEach(element => {
     console.log(element);
 } );
+//console.log(mArray.pop());//
 
+mArray.forEach(function (elemento, indice, array){
+    console.log(elemento, indice);
+});
+mArray.push(false);
+console.log(mArray.sort()); //ordena alfabeticamente//
