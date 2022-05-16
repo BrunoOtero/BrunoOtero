@@ -1,0 +1,8 @@
+#a1 {
+    width: 120px;
+    height: 120px;
+    transition-duration: 1s;
+    }
+#a1:hover {
+    transform: scale(0.5, 1);
+    }
