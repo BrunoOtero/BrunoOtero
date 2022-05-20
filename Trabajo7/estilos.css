@@ -1,0 +1,12 @@
+body {background-color:blanchedalmond;}
+
+.primero{
+    width:70%;
+    height:300px;
+    position:absolute;
+    top: 0%;
+}
+.segundo{
+   width:40%;
+   height:200px;
+}
