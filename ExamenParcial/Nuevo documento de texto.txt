@@ -1,0 +1,2 @@
+//se enecesita buscar por el DNI si el socio existe, en caso de no existir mostrar en rojo "NO EXISTE".//
+//si existe evaluar lo siguiente si tiene menos de 3 facturas mostrar en verde, +3 y -6 amarillo y +6 en rojo, NOMBRE Y CANTIDAD DE FACTURAS//
