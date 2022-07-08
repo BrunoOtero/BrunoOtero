@@ -8,7 +8,7 @@ let socio1 = {
 
 let socio2 = {
     Apellido: "Otero",
-    Nombre: "Javier",
+    Nombre: "Gerardo",
     Edad: "46",
     Facturas: "5",
     DNI: "22.358.603",
@@ -38,29 +38,34 @@ let socio5 = {
     DNI: "21.840.732",
 }
 
-//const btnBusca = document.getElementById("btn")
-
-//function busqueda(){
-//    if(socio.DNI = document.getElementById('cod')){
-//        console.log(Apellido);
-//        console.log(Nombre);
-//        console.log(Facturas);
-//        document.getElementById('result');
-//            innerText
-//    }
-//}
-
-let DOC = [socio1.DNI, socio2.DNI, socio3.DNI, socio4.DNI, socio5.DNI];
+let DOC = [socio1, socio2, socio3, socio4, socio5];
 console.log(DOC)
 
-const COMP = document.getElementById('a1')
-
 function busqueda(){
-    for (var i = 0; i < 6; i++) {
-        if (DOC[i] = COMP) {
-            document.getElementById('resul').innerHTML = 'EXISTE';
-        }else{
-            document.getElementById('resul').innerHTML = 'NO EXISTE';
+    let RESDNI = document.getElementById('dni')
+    let resultado = document.getElementById('resultado')
+    let socioEncontrado = ""
+    
+    DOC.forEach((socio)=>{
+        if(socio.DNI == RESDNI.value){
+            socioEncontrado = socio;
         }
-    }
+    });
+    if(socioEncontrado != ""){
+        if(socioEncontrado.Facturas <= 3){
+            resultado.innerHTML = socioEncontrado.Nombre+" "+socioEncontrado.Apellido+" "+socioEncontrado.Facturas;
+            resultado.style.background = 'green';
+        }
+        if(socioEncontrado.Facturas > 3 && socioEncontrado.Facturas <= 6){
+            resultado.innerHTML = socioEncontrado.Nombre+" "+socioEncontrado.Apellido+" "+socioEncontrado.Facturas;
+            resultado.style.background = 'yellow';
+        }
+        if(socioEncontrado.Facturas > 6){
+            resultado.innerHTML = socioEncontrado.Nombre+" "+socioEncontrado.Apellido+" "+socioEncontrado.Facturas;
+            resultado.style.background = 'red';
+        }
+        } else {
+            resultado.innerHTML = "NO EXISTE";
+            resultado.style.background = 'red';
+        }
 }
