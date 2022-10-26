@@ -1,0 +1,86 @@
+*{ 
+    margin: 20px;
+    padding: 0px;
+}
+
+body{
+    background: #fdf5f5;
+    color: #001735;
+    font-family: monospace;
+}
+
+#container{
+    background: #E3DAC9;
+    width: 90%;
+    margin: 0px auto;
+    color: #001735;
+    font-family: monospace;
+}
+header h1{
+    background: #001735;
+    text-align: center;
+    line-height: 200px;
+    font-size: 250%;
+    font-style: italic;
+    font-family: monospace;
+    color: #E3DAC9;
+    border-bottom: 10px solid #E3DAC9;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+nav{
+    background: #001735;
+    font-family: monospace;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    color: #E3DAC9;
+    font-size: 200%;
+    line-height: 30px;
+    font-family: monospace;
+}
+.clear{
+    clear: both;
+    font-family: monospace;
+}
+#contenido{
+    float: left;
+    width: calc(100% - 120px);
+    min-height: 200px;
+    background: #E3DAC9;
+    padding: 10px;
+    font-family: monospace;
+}
+.article{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    font-family: monospace;
+}
+aside{
+    float: auto;
+    min-height: 500px;
+    background: #E3DAC9;
+    padding: 10px;  
+    font-family: monospace;
+}
+footer{
+    background: #001735;
+    color: #eef6f8;
+    text-align: center;
+    height: 20px;
+    font-family: monospace;
+}
+#objetivos{
+    float: left;
+    width: calc(100% - 120px);
+    min-height: 200px;
+    background: #E3DAC9;
+    padding: 10px;
+    font-family: monospace;
+}
