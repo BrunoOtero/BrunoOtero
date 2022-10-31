@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aranceles</title>
+    <script src="Arancel.js"></script>
+</head>
+<body>
+    <form method="post" action="Afiliado.php">
+        <p><b>Nombre: </b><input type="text" name="nombre"></p>
+        <p><b>Apellido: </b><input type="text" name="apellido"></p>
+        <p><b>DNI: </b><input type="text" name="dni"></p>
+        <p><b>Tipo de arancel: </b><select name="arancel" id="arancel" onchange="Arancel(this.value)">
+            <option value="Docente">Docente</option>
+            <option value="Alumno">Alumno</option>
+        </select></p>
+        <p><b>Valor de Arancel: </b><input type="number" name="ValorA" id="ValorA" value=""></p>
+        <p><b>Fecha de Nacimiento: </b><input type="date" name="nacimiento"></p><br>
+        <input type="submit" value="ENVIAR">
+    </form>
+    <hr>
+    
+</body>
+</html>
